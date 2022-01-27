@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(260deg,#041C32, #04293A,#064663, #ECB365);
+    background-size: 500% 300%;
+    animation: back 15s ease infinite;
+}
+.formarquadrado{
+    position: relative;
+  
+}
+@keyframes back {
+    0%{
+     background-position: 0% 50%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+#formarquadrado5{
+    margin-left: -400px;
+}
+section{
+    position: relative;
+    border: 2px solid rgb(202, 188, 188);
+    background: transparent;
+    padding: 45px;
+    height: 500px;
+    text-align: center;
+    float: left;
+     
+
+}
+
+.line{ 
+position: absolute;
+border-right: 2px solid white;
+font-size: 20px;
+color: white;
+white-space: nowrap;
+overflow: hidden;
+margin-top:  200px ;
+margin-left: 500px;
+
+
+}
+h2{
+    color: white;
+    margin-bottom: 10px;
+
+}
+.making-animation{
+    animation: cursorblinck 800ms steps(40) infinite normal, making 4s steps(40) 9s normal both;
+}
+@keyframes making {
+   from{
+     width: 0;
+   } 
+   to{
+    width: 16em;
+   }
+}
+@keyframes cursorblinck {
+from{
+border-right-color:rgb(252, 249, 249);
+}
+to{
+    border-right-color: transparent;
+}
+
+}
+#titulo{
+    position: absolute;
+    color: white;
+    border: 2px solid rgb(240, 234, 234);
+    margin-bottom: 600px;
+    font: 'Teko', sans-serif;
+    font-size: 40px;
+    padding: 10px;
+    margin-left: -600px;
+   
+}
+.formarquadrado input{
+    padding: 15px;
+    width: 220px;
+    border: 2px solid green;
+    border-radius: 18px ;
+    margin-bottom: 10px;
+
+}
+button {
+     padding: 10px;
+     border: 2px solid transparent;
+     border-radius: 14px;
+     margin-top: 15px;
+     margin-bottom: 15px;
+     cursor: pointer;
+}
+p{
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+div{
+    position: relative;
+    margin-bottom: 200px;
+
+}
+#div-redesocial{
+    margin-left: 50px;
+}
+.text-apre{
+position: absolute;
+font-size: 20px;
+color: white;
+white-space: nowrap;
+overflow: hidden;
+width: 50px;
+display: block;
+
+
+}
+.text-apre-animção{
+    animation:   makingtext 4s steps(73) 1s normal both ;
+}
+.texto-animação{
+     position: absolute;
+     margin-top: 50px;
+    animation:  makingtext1 4s steps(72) 5s normal both ;
+   
+}
+@keyframes cursorblincktwo {
+    from{
+    border-right-color:rgb(252, 249, 249);
+    
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes makingtext{
+   from{ 
+     width: 0;
+    
+   } 
+   to{
+       
+    width: 30em;
+     
+   }
+
+}
+@keyframes makingtext1{
+    from{ 
+      width: 0;
+     
+    } 
+    to{
+        
+     width: 31em;
+      
+    }
+ 
+ }
+#feedback{
+    margin-top: 100px;
+}
+.valida-campo{
+    color: red;
+}
